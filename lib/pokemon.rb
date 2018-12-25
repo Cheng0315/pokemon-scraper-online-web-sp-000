@@ -3,8 +3,6 @@ class Pokemon
 
   def initialize(pokemon)
     @id = pokemon[0]
-    @name = pokemon[2]
-    @type = pokemon[3]
   end
 
   def self.save(pk_name, pk_type, pk_db)
