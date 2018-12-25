@@ -6,7 +6,7 @@ class Pokemon
   end
 
   def self.save(pk_name, pk_type, pk_db)
-    all
+    all << [pk_name, pk_type, pk_db]
   end
 
   def self.all
