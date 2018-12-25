@@ -5,7 +5,6 @@ class Pokemon
     @id = pokemon[1]
     @name = pokemon[2]
     @type = pokemon[3]
-    @@all << self
   end
 
   def self.save(pk_name, pk_type, pk_db)
