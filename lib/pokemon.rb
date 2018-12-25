@@ -14,7 +14,7 @@ class Pokemon
     @@all
   end
 
-  def self.find
-
+  def self.find(id, db)
+    
   end
 end
