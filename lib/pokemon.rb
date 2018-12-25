@@ -1,7 +1,7 @@
 class Pokemon
   attr_accessor :name, :type, :db
 
-  def initialize(db)
+  def initialize(pokemon)
   end
 
   def self.save(pk_name, pk_type, pk_db)
@@ -9,6 +9,7 @@ class Pokemon
   end
 
   def self.find(pk_id, pk_db)
-    pk_db.execute("SELECT * FROM pokemon WHERE pokemon.id = #{pk_id}")
+    pokemon = pk_db.execute("SELECT * FROM pokemon WHERE pokemon.id = #{pk_id}")
+    Pokemon.new(pokemon)
   end
 end
