@@ -2,7 +2,6 @@ class Pokemon
   attr_accessor :id, :name, :type, :db
 
   def initialize(db)
-    @db = []
   end
 
   def self.save(pk_name, pk_type, pk_db)
@@ -10,6 +9,6 @@ class Pokemon
   end
 
   def self.find(id, db)
-    
+
   end
 end
