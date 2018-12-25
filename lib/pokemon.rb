@@ -6,7 +6,7 @@ class Pokemon
   end
 
   def self.save(pk_name, pk_type, pk_db)
-    Pokemon.new(pk_name, pk_type, pk_d)
+    Pokemon.new(pk_name, pk_type, pk_db)
   end
 
   def self.all
